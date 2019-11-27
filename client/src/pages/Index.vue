@@ -10,7 +10,7 @@
         <div class="content-center brand">
           <h1 class="h1-seo">ซิตี้วิลล่า คอนโด</h1>
           <h3>Internal Information </h3>
-          <p> กำลังพัฒนา </p>
+          <p> ข้อมูลใช้ภายในเท่านั้น </p>
         </div>
       </div>
     </div>

@@ -1,0 +1,193 @@
+{
+  "site": {
+    "name": "Manage",
+    "owner": "Wanchai Fuangmali",
+    "owner_address": "3276/202 Klongjan Bangkapi Bangkok",
+    "owner_contact": "0815555555",
+    "owner_email": "wanchai@vstecs.local"
+  },
+  "users": [
+    {
+      "email": "wanchai@vstecs.local",
+      "password": "$2a$10$XrQ/1hJyBdhXZ0OPwV6oBe.gy8Y9ubjERe8b/eXWxM6w4Vub6UWYS",
+      "firstname": "Wanchai",
+      "lastname": "Fuangmali",
+      "age": 22,
+      "id": 1
+    },
+    {
+      "email": "user1@vstecs.local",
+      "password": "$2a$10$/nAQ/bJRlW.Ad3/ZwvopJ.HsuBdqi9HjepAZNIHmIecUWXcCflib6",
+      "firstname": "Wanchai",
+      "lastname": "Fuangmali",
+      "age": 22,
+      "id": 2
+    }
+  ],
+  "u1item": [
+    {
+      "icon": "mdi-account-edit",
+      "text": "User",
+      "url": "/User"
+    }
+  ],
+  "items": [
+    {
+      "icon": "mdi-account-edit",
+      "text": "User",
+      "url": "/User"
+    },
+    {
+      "icon": "mdi-account-check",
+      "text": "Admin",
+      "url": "Admin"
+    }
+  ],
+  "products": [
+    {
+      "identity_id": "800000000000000",
+      "identity_name": "จัสมิน",
+      "identity_specie": "สุนัข",
+      "identity_breed": "ปอมเมอเรเนียน",
+      "identity_birthday": "2019-01-01",
+      "identity_sex": 1,
+      "identity_color": "เขียวหัวเป็ด",
+      "identity_veterinarian": "ไม่มี",
+      "identity_address": "3211",
+      "identity_contact": "0999999999",
+      "identity_owner": "test1234",
+      "identity_owner_address": "123",
+      "identity_owner_contact": "123",
+      "id": 1,
+      "status": 1
+    },
+    {
+      "identity_id": "800000000000001",
+      "identity_name": "การ์ฟิล",
+      "identity_specie": "แมว",
+      "identity_breed": "ไม่รู้",
+      "identity_birthday": "2018-01-31",
+      "identity_sex": 1,
+      "identity_color": "ส้ม",
+      "identity_veterinarian": "ไม่รู้",
+      "identity_address": "บนหลังคาบ้าน",
+      "identity_contact": "ไม่มี",
+      "identity_owner": "Wancahi Fuangmali",
+      "identity_owner_address": "3276/202 Klongjan Bangkapi Bangkok",
+      "identity_owner_contact": "0815555555",
+      "id": 2
+    },
+    {
+      "identity_id": "800000000000002",
+      "identity_name": "กากาเลี่ยน",
+      "identity_specie": "กะปอม",
+      "identity_breed": "พิเศษ",
+      "identity_birthday": "2011-01-31",
+      "identity_sex": 2,
+      "identity_color": "เทา",
+      "identity_veterinarian": "ไม่มี",
+      "identity_address": "บนต้นไม้",
+      "identity_contact": "ไม่มี",
+      "identity_owner": "Wancahi Fuangmali",
+      "identity_owner_address": "3276/202 Klongjan Bangkapi Bangkok",
+      "identity_owner_contact": "0815555555",
+      "id": 3
+    },
+    {
+      "identity_id": "800000000000003",
+      "identity_name": "ทอง",
+      "identity_specie": "ปลา",
+      "identity_breed": "มังกร",
+      "identity_birthday": "2010-12-01",
+      "identity_sex": 1,
+      "identity_color": "ทอง",
+      "identity_veterinarian": "ไม่มี",
+      "identity_address": "ไม่มี",
+      "identity_contact": "ไม่มี",
+      "identity_owner": "Wancahi Fuangmali",
+      "identity_owner_address": "3276/202 Klongjan Bangkapi Bangkok",
+      "identity_owner_contact": "0815555555",
+      "id": 4
+    },
+    {
+      "identity_id": "800000000000004",
+      "identity_name": "เงิน",
+      "identity_specie": "ปลา",
+      "identity_breed": "ปลาทอง",
+      "identity_birthday": "2018-01-01",
+      "identity_sex": 1,
+      "identity_color": "เงิน",
+      "identity_veterinarian": "ไม่มี",
+      "identity_address": "ไม่มี",
+      "identity_contact": "ไม่มี",
+      "identity_owner": "Wancahi Fuangmali",
+      "identity_owner_address": "3276/202 Klongjan Bangkapi Bangkok",
+      "identity_owner_contact": "0815555555",
+      "id": 5
+    },
+    {
+      "identity_id": "800000000000005",
+      "identity_name": "พี่เบิ้ม",
+      "identity_specie": "งูเหลือม",
+      "identity_breed": "ไม่รู้",
+      "identity_birthday": "2015-01-01",
+      "identity_sex": 1,
+      "identity_color": "เหลืองลาย",
+      "identity_veterinarian": "ไม่มี",
+      "identity_address": "ไม่มี",
+      "identity_contact": "ไม่มี",
+      "identity_owner": "Wancahi Fuangmali",
+      "identity_owner_address": "3276/202 Klongjan Bangkapi Bangkok",
+      "identity_owner_contact": "0815555555",
+      "id": 6
+    },
+    {
+      "identity_id": "800000000000006",
+      "identity_name": "ด่าง",
+      "identity_specie": "หมา",
+      "identity_breed": "ด่าง",
+      "identity_birthday": "2011-01-23",
+      "identity_sex": 2,
+      "identity_color": "ด่าง",
+      "identity_veterinarian": "ไม่มี",
+      "identity_address": "ไม่มี",
+      "identity_contact": "ไม่มี",
+      "identity_owner": "Wancahi Fuangmali",
+      "identity_owner_address": "3276/202 Klongjan Bangkapi Bangkok",
+      "identity_owner_contact": "0815555555",
+      "id": 7
+    },
+    {
+      "identity_id": "800000000000007",
+      "identity_name": "แมว",
+      "identity_specie": "หมา",
+      "identity_breed": "หมู",
+      "identity_birthday": "2010-12-11",
+      "identity_sex": 2,
+      "identity_color": "ทอง",
+      "identity_veterinarian": "-",
+      "identity_address": "-",
+      "identity_contact": "-",
+      "identity_owner": "Wancahi Fuangmali",
+      "identity_owner_address": "3276/202 Klongjan Bangkapi Bangkok",
+      "identity_owner_contact": "0815555555",
+      "id": 8
+    },
+    {
+      "identity_id": "800000000000010",
+      "identity_name": "แมวน้อย",
+      "identity_specie": "แมว",
+      "identity_breed": "ไม่รู้",
+      "identity_birthday": "2010-10-11",
+      "identity_sex": 2,
+      "identity_color": "ส้ม",
+      "identity_veterinarian": "ไม่มี",
+      "identity_address": "ไม่มี",
+      "identity_contact": "-",
+      "identity_owner": "อะไรซักอย่าง",
+      "identity_owner_address": "3276/202 Klongjan Bangkapi Bangkok",
+      "identity_owner_contact": "0815555555",
+      "id": 9
+    }
+  ]
+}

@@ -18,7 +18,7 @@
         trigger="hover"
       >
         <div class="popover-body">
-          Designed by Invision. Coded by Creative Tim
+          Home, Internal use.
         </div>
       </el-popover>
     </template>
@@ -31,12 +31,6 @@
       >
         <nav-link to="/landing">
           <i class="now-ui-icons education_paper"></i> Landing
-        </nav-link>
-        <nav-link to="/login">
-          <i class="now-ui-icons users_circle-08"></i> Login
-        </nav-link>
-        <nav-link to="/profile">
-          <i class="now-ui-icons users_single-02"></i> Profile
         </nav-link>
       </drop-down>
     </template>

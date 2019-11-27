@@ -2,8 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import MainNavbar from '@/layout/MainNavbar.vue';
 import MainFooter from '@/layout/MainFooter.vue';
-
-import Login from "@/components/Login"
+import Login from '@/pages/Login.vue';
+import Landing from '@/pages/Landing.vue';
+// import Login from "@/components/Login"
 // import HelloWorld from "@/components/HelloWorld"
 import Index from '@/pages/Index.vue';
 import Dashboard from "@/components/Dashboard"
@@ -22,15 +23,22 @@ const routes = [
     }
   },
   {
-    path: "/login",
-    name: "Login",
-    component: Login
+    path: '/login',
+    name: 'login',
+    components: { default: Login, header: MainNavbar },
+    props: {
+      header: { colorOnScroll: 400 }
+    }
   },
   {
-    path: "/dashboard",
-    name: "Dashboard",
-    component: Dashboard
-}
+    path: '/landing',
+    name: 'landing',
+    components: { default: Landing, header: MainNavbar, footer: MainFooter },
+    props: {
+      header: { colorOnScroll: 400 },
+      footer: { backgroundColor: 'black' }
+    }
+  }
 
 ]
 
