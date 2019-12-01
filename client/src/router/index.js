@@ -4,12 +4,7 @@ import MainNavbar from '@/layout/MainNavbar.vue';
 import MainFooter from '@/layout/MainFooter.vue';
 import Login from '@/pages/Login.vue';
 import Landing from '@/pages/Landing.vue';
-// import Login from "@/components/Login"
-// import HelloWorld from "@/components/HelloWorld"
 import Index from '@/pages/Index.vue';
-import Dashboard from "@/components/Dashboard"
-// import Home from '../views/Home.vue'
-
 Vue.use(VueRouter)
 
 const routes = [

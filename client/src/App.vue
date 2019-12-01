@@ -8,6 +8,5 @@
   </div>
 </template>
 <script>
-window.API='http://localhost:3000'
 export default {};
 </script>
