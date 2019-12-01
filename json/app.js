@@ -25,4 +25,5 @@ app.use(jsonServer.rewriter({
 app.use(rules)
 app.use(auth)
 app.use(router)
-app.listen(8080)
+
+module.exports = app;
