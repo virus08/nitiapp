@@ -40,6 +40,7 @@
 </template>
 
 <script>
+const API = window.api;
 import VueJwtDecode from "vue-jwt-decode";
 var myStorage = window.localStorage;
 export default {
@@ -59,7 +60,7 @@ export default {
         password: this.password
       }
       axios
-        .post("/api/login", data)
+        .post(API+"/api/login", data)
         .then(response => {
           if (response.data.accessToken) {
             myStorage.setItem("token", response.data.accessToken);

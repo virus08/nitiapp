@@ -12,7 +12,8 @@
 </template>
 
 <script>
-window.role = "admin";
+window.api = "https://fbackend.azurewebsites.net";
+window.role = "admin"
 export default {
   name: "App",
   data: () => ({

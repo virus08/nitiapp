@@ -34,6 +34,7 @@
 
 <script>
 const ROLE = window.role;
+const API = window.api;
 export default {
   props: {
     source: String
@@ -51,9 +52,9 @@ export default {
   methods: {
     initialize() {
       axios
-        .get("/api/site")
+        .get(API+"/api/site")
         .then(response => (this.sitename = response.data.name));
-      axios.get("/api/items").then(response => (this.items = response.data));
+      axios.get(API+"/api/items").then(response => (this.items = response.data));
     }
   }
 };

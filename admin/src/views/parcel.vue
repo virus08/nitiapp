@@ -153,6 +153,7 @@
 
 <script>
 const storage = window.localStorage;
+const API = window.api;
 import xdecode from "vue-jwt-decode";
 import pdfMake from "pdfmake/build/pdfmake";
 import pdfFonts from "pdfmake/build/vfs_fonts";
@@ -319,9 +320,12 @@ export default {
     //console.log(this.xtoken)
     if (this.xtoken) {
       axios.defaults.headers.common["authorization"] = `Bearer ${this.xtoken}`;
-      //console.log(xdecode.decode(this.xtoken).sub)
+      // axios.defaults.headers.common["Access-Control-Allow-Methods"] = 'GET, POST, PATCH, PUT, DELETE, OPTIONS';
+      // axios.defaults.headers.common["Access-Control-Allow-Origin"] = 'http://localhost:8080';
+      // axios.defaults.headers.common["Access-Control-Allow-Headers"] = 'Origin, Content-Type, X-Auth-Token';
+      // console.log(xdecode.decode(this.xtoken).sub)
       axios
-        .get("/api/users/" + xdecode.decode(this.xtoken).sub)
+        .get(API+"/api/users/" + xdecode.decode(this.xtoken).sub)
         .then(response => this.checkrole(response.data.role))
         .catch(error => this.logout(error));
     } else {
@@ -355,7 +359,7 @@ export default {
               [
                 {
                   table: {
-                    widths: [50, "*", 25, 20, 50, 50, "*"],
+                    widths: [70, "*", 25, 20, 50, 50, "*"],
                     body: [
                       [
                         { text: "เลขที่พัสดุ", alignment: "center" },
@@ -419,7 +423,7 @@ export default {
     },
     initialize() {
       axios
-        .get("/api/parcel")
+        .get(API+"/api/parcel")
         .then(response => (this.desserts = response.data));
     },
     close() {
@@ -428,7 +432,7 @@ export default {
       this.editedIndex = -1;
     },
     save() {
-      let xurl = "/api/parcel/" + this.editedItem.id;
+      let xurl = API+"/api/parcel/" + this.editedItem.id;
       if (this.editedIndex > -1) {
         Object.assign(this.desserts[this.editedIndex], this.editedItem);
         if (
@@ -443,11 +447,11 @@ export default {
         //console.log(this.editedItem)
         axios.put(xurl, this.editedItem);
         axios
-          .get("/api/parcel")
+          .get(API+"/api/parcel")
           .then(response => (this.desserts = response.data));
       } else {
         this.desserts.push(this.editedItem);
-        axios.post("/api/parcel", this.editedItem);
+        axios.post(API+"/api/parcel", this.editedItem);
         if (
           this.editedItem.status == "ส่งแล้ว" ||
           this.editedItem.status == "ตีคืน"
@@ -458,7 +462,7 @@ export default {
           ].pdateout = this.editedItem.pdateout;
         }
         axios
-          .get("/api/parcel")
+          .get(API+"/api/parcel")
           .then(response => (this.desserts = response.data));
       }
       this.close();
@@ -471,7 +475,7 @@ export default {
     xdelete(item) {
       const index = this.desserts.indexOf(item);
       this.desserts.splice(index, 1);
-      axios.delete("/api/parcel/" + item.id);
+      axios.delete(API+"/api/parcel/" + item.id);
     },
     deleteItem(item) {
       confirm("Are you sure you want to delete this item?") &&
